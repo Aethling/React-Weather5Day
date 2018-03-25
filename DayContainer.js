@@ -1,11 +1,11 @@
 import React from 'react';
-import Day from 'day';
+import DayBox from './DayBox';
 
-const DayBox = props => (
+const DayContainer = props => (
      <div className="box">
-        <Day/>
+        <DayBox/>
       </div>
 )
    
 
-export default DayBox;
+export default DayContainer;

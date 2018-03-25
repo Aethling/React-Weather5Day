@@ -4,13 +4,14 @@ import './App.css';
 import Title from './Title';
 import Form from './Form';
 import TableContainer from './TableContainer';
+import DayContainer from './DayContainer';
 
 const api_key = "6ef165ed56956a797f5b3a45375e1ad7";
 
 class App extends Component {
 	state = {
 		data: undefined
-	};
+	}
 
 	getWeather = async (e) => {
 		const city = e.target.elements.city.value;
@@ -31,20 +32,25 @@ class App extends Component {
 		}
 		console.log(this.state.data)
 	} 
-
-  render() {
+	checkForData() {
 	   const isLoading = typeof this.state.data === 'undefined';
+		if (isLoading) {
+			return (<span>loading...</span>);
+		} else {
+			return (
+				<div>
+		           	<DayContainer />
+		            <TableContainer data={this.state.data}/>
+	            </div>
+			);
+		}
+		}	 
+  render() {
     return (
       <div>
         <Title/>
         <Form getWeather={this.getWeather}/>
-          { isLoading
-           ? <span>loading...</span>
-           : [
-           	<DayContainer />
-            <TableContainer data={this.state.data}/>
-            ]
-         }
+        {this.checkForData()}
       </div>
     );
   }

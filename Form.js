@@ -2,10 +2,16 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 const Form = props => (
-	<form onSubmit={this.props.getWeather}>
-		<input type="text" name="city" placeholder="Enter City..."/>
-		<input type="text" name="country" placeholder="Country Code..."/>
-		<button type="submit">Enter</button>
+	<form onSubmit={props.getWeather}>
+		<div className="field has-addons">
+			<div className="control">
+				<input className="input is-danger has-text-grey-darker" type="text" name="city" placeholder="Enter City..."/>
+				<input className="input is-danger has-text-grey" type="text" name="country" placeholder="Country Code..."/>
+			</div>
+			<div className="control">
+				<button type="submit" className="button is-danger is-outlined">Enter</button>
+			</div>
+		</div>
 	</form>
 );
 export default Form;

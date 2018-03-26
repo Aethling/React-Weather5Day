@@ -10,7 +10,71 @@ const api_key = "6ef165ed56956a797f5b3a45375e1ad7";
 
 class App extends Component {
 	state = {
-		data: undefined
+		data: {
+			city: "Portland",
+			list: [
+				{
+					main: {
+						temp: 44.3,
+						temp_max: 54,
+						temp_min: 40
+					},
+					weather: [
+						{
+							main: "rain"
+						}
+					]
+				},
+				{
+					main: {
+						temp: 47,
+						temp_max: 58,
+						temp_min: 48
+					},
+					weather: [
+						{
+							main: "cloudy"
+						}
+					]
+				},
+				{
+					main: {
+						temp: 45.3,
+						temp_max: 57,
+						temp_min: 44
+					},
+					weather: [
+						{
+							main: "rain"
+						}
+					]
+				},
+				{
+					main: {
+						temp: 47.3,
+						temp_max: 64,
+						temp_min: 30
+					},
+					weather: [
+						{
+							main: "sunny"
+						}
+					]
+				},
+				{
+					main: {
+						temp: 54.3,
+						temp_max: 74,
+						temp_min: 30
+					},
+					weather: [
+						{
+							main: "snow"
+						}
+					]
+				}
+			]
+		}
 	};
 
 	getWeather = async (e) => {
@@ -39,13 +103,15 @@ class App extends Component {
       <div>
         <Title/>
         <Form getWeather={this.getWeather}/>
-          { isLoading
+           	<DayContainer dayData={this.state.data}/>
+
+         {/* { isLoading
            ? <span>loading...</span>
            : [
            	<DayContainer />,
             <TableContainer data={this.state.data}/>
             ]
-         }
+         }*/}
       </div>
     );
   }

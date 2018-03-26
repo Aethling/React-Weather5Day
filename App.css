@@ -5,3 +5,7 @@
 .field {
   margin-top: 10px;
 }
+.box {
+	width: 100px;
+	box-shadow: 1px 2px 2px;
+}

@@ -5,6 +5,8 @@ import snow from './weatherIcons/wi-day-snow.svg';
 import windy from './weatherIcons/wi-day-windy.svg';
 import showers from './weatherIcons/wi-day-showers.svg';
 import cloudy from './weatherIcons/wi-day-cloudy.svg';
+import Sunnysvg from './Sunnysvg';
+import Cloudysvg from './SVGcomponents/Cloudysvg';
 
 
 const DayImage = props => {
@@ -21,7 +23,7 @@ const DayImage = props => {
 			case 'Rain':
 	 			return imgObj.rainyImg;	
 			case 'Clear':
-				return imgObj.sunnyImg;
+				return <Sunnysvg/>;
 			case 'Snow':
 				return imgObj.snowyImg;
 			case 'Windy':
@@ -29,7 +31,7 @@ const DayImage = props => {
 			case 'Showers':
 				return imgObj.showersImg;
 			case 'Clouds':
-				return imgObj.cloudyImg;
+				return <Cloudysvg/>;
 			default:
 				return "no image";
 		}
@@ -37,7 +39,7 @@ const DayImage = props => {
 
 	return (
 		<div>
-			<img alt="Img" src={findRightImage(props.main)}/>
+			{findRightImage(props.main)}
 		</div>
 	);
 	}

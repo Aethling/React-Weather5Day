@@ -5,6 +5,7 @@ import DayBox from './DayBox';
 const DayContainer = props => {
 		const weekArr = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun", "Mon", "Tues", "Wed",];
 		let d = new Date();
+		let dayNum = d.getDay();
 	return (
      <div className="box-container">
      	{props.data5Day.map((item, index) => 

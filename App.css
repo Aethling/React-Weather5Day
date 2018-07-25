@@ -38,7 +38,7 @@
 }
 .tempContainer {
 	position: relative;
-	top: 10px;
+	top: -10px;
 }
 img {
 	height: 60px;

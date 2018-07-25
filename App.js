@@ -79,7 +79,8 @@ class App extends Component {
 	// 	}
 	// };
 	state = {
-		data: undefined
+		data: undefined,
+		data5Day: undefined
 	}
 	getWeather = async (e) => {
 		const city = e.target.elements.city.value;
@@ -90,16 +91,24 @@ class App extends Component {
 		if (city && country) {
 			console.log(data);
 			this.setState({
-				data: data
-		}) 
+				data: data,
+				data5Day: [
+					data.list[0],
+					data.list[8],
+					data.list[16],
+					data.list[24],
+					data.list[32],
+				]
+			}) 
+			console.log(this.state.data5Day);
 		} else {
 			console.log("error");
 			this.setState({
 				data: undefined
 			})
 		}
-		console.log(this.state.data)
 	} 
+
 
   render() {
 	   const isLoading = typeof this.state.data === 'undefined';
@@ -110,10 +119,9 @@ class App extends Component {
          { isLoading
            ? <span>loading...</span>
            : [
-			        <p className="cityName">Daily weather for: {this.state.data.city}</p>,
-			       	<DayContainer allData={this.state.data}
-			       				weatherImg={this.state.images}/>,
-			        <TableContainer list={this.state.data.list}/>
+			        <p className="cityName">Daily weather for: {this.state.data.city.name}</p>,
+			       	<DayContainer data5Day={this.state.data5Day} />,
+			        <TableContainer list={this.state.data.list} />
             ]
          }
       </div>

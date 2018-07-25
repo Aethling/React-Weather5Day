@@ -26,3 +26,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+ wi-day-cloudy.svg
+wi-day-rain.svg
+wi-day-showers.svg
+ wi-day-snow.svg
+ wi-day-sunny.svg
+ wi-day-windy.svg

@@ -18,19 +18,20 @@ const DayImage = props => {
 		}
 	const findRightImage = (main) => {
 		switch (main) {
-			case 'rain':
+			case 'Rain':
 	 			return imgObj.rainyImg;	
-			case 'sunny':
+			case 'Clear':
 				return imgObj.sunnyImg;
-			case 'snow':
+			case 'Snow':
 				return imgObj.snowyImg;
-			case 'windy':
+			case 'Windy':
 				return imgObj.windyImg;
-			case 'showers':
+			case 'Showers':
 				return imgObj.showersImg;
-			case 'cloudy':
+			case 'Clouds':
 				return imgObj.cloudyImg;
-
+			default:
+				return "no image";
 		}
 	}
 

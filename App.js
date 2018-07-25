@@ -117,9 +117,9 @@ class App extends Component {
         <Title/>
         <Form getWeather={this.getWeather}/>
          { isLoading
-           ? <span>loading...</span>
+           ? <h1 className="has-text-danger">Enter a city and state or city and country.</h1>
            : [
-			        <p className="cityName">Daily weather for: {this.state.data.city.name}</p>,
+			        <p className="cityName has-text-danger">Daily weather for: {this.state.data.city.name}</p>,
 			       	<DayContainer data5Day={this.state.data5Day} />,
 			        <TableContainer list={this.state.data.list} />
             ]

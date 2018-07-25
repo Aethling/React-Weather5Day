@@ -52,13 +52,13 @@ img:hover {
 .sun {
 	fill: yellow;
 }
+/*weather table style*/
 .weatherTableTitle {
 	margin-bottom: 10px;
 	color: red;
 }
 .tableContainer {
 	padding: 15px;
-
 }
 .tableRow {
 	background-color: white;
@@ -66,13 +66,38 @@ img:hover {
 .tableRow td {
 	border: 1px solid lightgrey;
 	padding: 8px;
+	text-align: center;
 }
+.tableHeading td {
+	border: 1px solid lightgrey;
+	text-align: center;
+	padding: 8px;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(348, 100%, 61%);
+}
+
 .dayboxWeekday {
 	font-weight: bold;
 }
 .dayboxMain {
 	color: blue;
 }
-.sunSVG:hover {
-	color: yellow;
+.sunSVG {
+	fill: #eaef51;
 }
+.sunSVG:hover {
+	transform: rotate(45deg) scale(1.2);
+	fill: #d6d039;
+}
+.cloudySVG, .rainSVG{
+	fill: grey;
+}
+.cloudySVG:hover, .rainSVG:hover{
+	fill: black;
+}
+svg:hover {
+	transition: .4s ease-out;
+	transform: scale(1.2);
+}
+
+

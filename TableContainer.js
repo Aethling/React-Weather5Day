@@ -3,7 +3,7 @@ import WeatherTable from './WeatherTable';
 
 const TableContainer = props => (
       <div className="tableContainer">
-      	<p className="weatherTableTitle">Hourly Weather</p>
+      	<p className="weatherTableTitle has-text-danger">Hourly Weather</p>
         <table>
             <WeatherTable list={props.list}/>
         </table>

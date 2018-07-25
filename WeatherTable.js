@@ -3,12 +3,22 @@ import React from 'react';
 //renders the data into table
 const WeatherTable = props => 
 	<tbody>
-    {props.list.map((item, index) => 
+      <tr className="tableHeading has-text-danger">
+        <td>Date and Time</td>
+        <td>Current temp</td>
+        <td>Description</td>
+        <td>High</td>
+        <td>Low</td>
+        <td>Wind</td>
+      </tr>
+    {props.list.map((item, index) =>  
 		  <tr className="tableRow" key={index}>
-            <td>Current temp: {item.main.temp} </td>
-            <td>Description: {item.weather[0].main} </td>
-            <td>High: {item.main.temp_max} </td>
-            <td>Low: {item.main.temp_min} </td>
+            <td>{item.dt_txt}</td>
+            <td>{item.main.temp} F</td>
+            <td>{item.weather[0].main}</td>
+            <td>{item.main.temp_max} F</td>
+            <td>{item.main.temp_min} F</td>
+            <td>{item.wind.speed} mph</td>
 		  </tr>
      
     )}

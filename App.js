@@ -120,7 +120,8 @@ class App extends Component {
            ? <h1 className="has-text-danger">Enter a city and state or city and country.</h1>
            : [
 			        <p className="cityName has-text-danger">Daily weather for: {this.state.data.city.name}</p>,
-			       	<DayContainer data5Day={this.state.data5Day} />,
+			       	<DayContainer data5Day={this.state.data5Day}
+			       								list={this.state.data.list} />,
 			        <TableContainer list={this.state.data.list} />
             ]
          }

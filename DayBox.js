@@ -4,6 +4,7 @@ import DayImage from './DayImage';
 
 
 const DayBox = props => {
+  
   return (
      <div className="box">
         <h2 className="dayboxWeekday">{props.weekday}</h2>

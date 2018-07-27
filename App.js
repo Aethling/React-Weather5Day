@@ -4,6 +4,7 @@ import './App.css';
 import Title from './Title';
 import Form from './Form';
 import DayContainer from './DayContainer';
+import TableContainer from './TableContainer';
 
 
 const api_key = "6ef165ed56956a797f5b3a45375e1ad7";
@@ -40,8 +41,14 @@ class App extends Component {
 				data: undefined
 			})
 		}
-	} 
+	};
 
+	changeTableAt = index => {
+		this.setState({
+			tableIndex: index
+		})
+		console.log(index);
+	}
 
   render() {
 	   const isLoading = typeof this.state.data === 'undefined';
@@ -54,9 +61,10 @@ class App extends Component {
            : [
 			        <p className="cityName has-text-danger">Daily weather for: {this.state.data.city.name}</p>,
 			       	<DayContainer data5Day={this.state.data5Day}
-			       								list={this.state.data.list} />,
-			        <TableContainer list={this.state.data.list} 
-			        								tableIndex={this.state.tableIndex}/>
+			       								list={this.state.data.list}
+			       								changeTableAt={this.changeTableAt} />,
+			        <TableContainer list={this.state.data.list}
+		        									tableIndex={this.state.tableIndex}/>
             ]
          }
       </div>

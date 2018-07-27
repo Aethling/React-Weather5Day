@@ -9,6 +9,8 @@ const WeatherTable = props =>
         <td>High</td>
         <td>Low</td>
         <td>Wind</td>
+        <td>Wind Dir</td>
+        <td>Humidity</td>
       </tr>
     {props.list.map((item, index) =>  
 		  <tr className="tableRow" key={index}>
@@ -17,6 +19,8 @@ const WeatherTable = props =>
             <td>{item.main.temp_max} F</td>
             <td>{item.main.temp_min} F</td>
             <td>{item.wind.speed} mph</td>
+            <td>{Math.round(item.wind.deg)} </td>
+            <td>{item.main.humidity} %</td>
 		  </tr>
      
     )}

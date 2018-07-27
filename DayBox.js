@@ -1,15 +1,12 @@
 import React from 'react';
 import DayImage from './DayImage';
-import WeatherTable from './WeatherTable';
 
 
 
 const DayBox = props => {
-  const handleClick = () => {
-    return <WeatherTable/>
-  }
+  
   return (
-     <div className="box" onClick={()=> this.handleClick}>
+     <div className="box" onClick={props.handleChangeTable}>
         <h2 className="dayboxWeekday">{props.weekday}</h2>
         <h1 className="dayboxMain">{props.main }</h1>
         <DayImage main={props.main}/>

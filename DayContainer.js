@@ -49,6 +49,8 @@ const DayContainer = props => {
      				max={Math.round(high[index])}
      				min={Math.round(low[index])}
      				list={props.list}
+						handleChangeTable={()=> props.changeTableAt(index)}
+
                          />
      		)}
       </div>

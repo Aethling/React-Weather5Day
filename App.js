@@ -3,84 +3,17 @@ import 'bulma/css/bulma.css';
 import './App.css';
 import Title from './Title';
 import Form from './Form';
-import TableContainer from './TableContainer';
 import DayContainer from './DayContainer';
 
 
 const api_key = "6ef165ed56956a797f5b3a45375e1ad7";
 
 class App extends Component {
-	// state = {
 	
-	// 	data: {
-	// 		city: "Portland",
-	// 		list: [
-	// 			{
-	// 				main: {
-	// 					temp: 44.3,
-	// 					temp_max: 54,
-	// 					temp_min: 40
-	// 				},
-	// 				weather: [
-	// 					{
-	// 						main: "rain"
-	// 					}
-	// 				]
-	// 			},
-	// 			{
-	// 				main: {
-	// 					temp: 47,
-	// 					temp_max: 58,
-	// 					temp_min: 48
-	// 				},
-	// 				weather: [
-	// 					{
-	// 						main: "cloudy"
-	// 					}
-	// 				]
-	// 			},
-	// 			{
-	// 				main: {
-	// 					temp: 45.3,
-	// 					temp_max: 57,
-	// 					temp_min: 44
-	// 				},
-	// 				weather: [
-	// 					{
-	// 						main: "rain"
-	// 					}
-	// 				]
-	// 			},
-	// 			{
-	// 				main: {
-	// 					temp: 47.3,
-	// 					temp_max: 64,
-	// 					temp_min: 30
-	// 				},
-	// 				weather: [
-	// 					{
-	// 						main: "sunny"
-	// 					}
-	// 				]
-	// 			},
-	// 			{
-	// 				main: {
-	// 					temp: 54.3,
-	// 					temp_max: 74,
-	// 					temp_min: 30
-	// 				},
-	// 				weather: [
-	// 					{
-	// 						main: "snow"
-	// 					}
-	// 				]
-	// 			}
-	// 		]
-	// 	}
-	// };
 	state = {
 		data: undefined,
-		data5Day: undefined
+		data5Day: undefined,
+		tableIndex: undefined
 	}
 	getWeather = async (e) => {
 		const city = e.target.elements.city.value;
@@ -122,7 +55,8 @@ class App extends Component {
 			        <p className="cityName has-text-danger">Daily weather for: {this.state.data.city.name}</p>,
 			       	<DayContainer data5Day={this.state.data5Day}
 			       								list={this.state.data.list} />,
-			        <TableContainer list={this.state.data.list} />
+			        <TableContainer list={this.state.data.list} 
+			        								tableIndex={this.state.tableIndex}/>
             ]
          }
       </div>

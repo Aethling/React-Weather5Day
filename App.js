@@ -14,7 +14,8 @@ class App extends Component {
 	state = {
 		data: undefined,
 		data5Day: undefined,
-		tableIndex: undefined
+		tableIndex: undefined,
+		error: false
 	}
 	getWeather = async (e) => {
 		const city = e.target.elements.city.value;
@@ -22,6 +23,7 @@ class App extends Component {
 		e.preventDefault();
 		const call_api = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&units=imperial&APPID=${api_key}`);
 		const data = await call_api.json();
+	
 		if (city && country) {
 			console.log(data);
 			this.setState({

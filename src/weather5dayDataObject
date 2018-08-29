@@ -1,0 +1,143 @@
+{cod: "200", message: 0.0086, cnt: 40, list: Array(40), city: {…}}
+city : coord
+: {lat: 45.5202, lon: -122.6742}
+country : "US"
+id : 5746545
+name : "Portland"
+population : 583776
+__proto__ : Object
+cnt : 40
+cod : "200"
+list : Array(40)
+0 : clouds
+: {all: 92}
+dt : 1523556000
+dt_txt : "2018-04-12 18:00:00"
+main : grnd_level
+: 993.15
+humidity : 100
+pressure : 993.15
+sea_level : 1028.73
+temp : 42.69
+temp_kf : 2.24
+temp_max : 42.69
+temp_min : 38.67
+__proto__ : Object
+rain : {3h: 2.5672}
+snow : {}
+sys : {pod: "d"}
+weather : [{…}]
+wind : {speed: 5.97, deg: 207.005}
+__proto__ :
+Object
+1 : {dt: 1523566800, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+2 : {dt: 1523577600, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+3 : {dt: 1523588400, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+4 : {dt: 1523599200, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+5 : {dt: 1523610000, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+6
+:
+{dt: 1523620800, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+7
+:
+{dt: 1523631600, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+8
+:
+{dt: 1523642400, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+9
+:
+{dt: 1523653200, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+10
+:
+{dt: 1523664000, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+11
+:
+{dt: 1523674800, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+12
+:
+{dt: 1523685600, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+13
+:
+{dt: 1523696400, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+14
+:
+{dt: 1523707200, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+15
+:
+{dt: 1523718000, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+16
+:
+{dt: 1523728800, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+17
+:
+{dt: 1523739600, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+18
+:
+{dt: 1523750400, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+19
+:
+{dt: 1523761200, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+20
+:
+{dt: 1523772000, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+21
+:
+{dt: 1523782800, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+22
+:
+{dt: 1523793600, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+23
+:
+{dt: 1523804400, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+24
+:
+{dt: 1523815200, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+25
+:
+{dt: 1523826000, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+26
+:
+{dt: 1523836800, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+27
+:
+{dt: 1523847600, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+28
+:
+{dt: 1523858400, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+29
+:
+{dt: 1523869200, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+30
+:
+{dt: 1523880000, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+31
+:
+{dt: 1523890800, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+32
+:
+{dt: 1523901600, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+33
+:
+{dt: 1523912400, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+34
+:
+{dt: 1523923200, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+35
+:
+{dt: 1523934000, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+36
+:
+{dt: 1523944800, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+37
+:
+{dt: 1523955600, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+38
+:
+{dt: 1523966400, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+39
+:
+{dt: 1523977200, main: {…}, weather: Array(1), clouds: {…}, wind: {…}, …}
+length : 40
+__proto__ : Array(0)
+message : 0.0086
+__proto__ : Object

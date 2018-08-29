@@ -23,7 +23,7 @@ class App extends Component {
 		const country = e.target.elements.country.value;
 		e.preventDefault();
 		try {
-			const call_api = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&units=imperial&APPID=${api_key}`);
+			const call_api = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&units=imperial&APPID=${api_key}`);
 			const data = await call_api.json();
 			if (data) {
 				console.log(data);
@@ -42,8 +42,6 @@ class App extends Component {
 			this.setState({
 				error: true
 			})
-			console.log("this is an error")
-			console.log(err);;
 		}
 	};
 
@@ -51,7 +49,6 @@ class App extends Component {
 		this.setState({
 			tableIndex: index
 		})
-		console.log(index);
 	}
 	resetError = () => {
 		this.setState({
